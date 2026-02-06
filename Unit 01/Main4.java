@@ -15,7 +15,7 @@ public class Main4 {
         Student S = new Student();
         S.display();
         Student.show();
-        S.show();
+        // S.show();
     }
     
 }
