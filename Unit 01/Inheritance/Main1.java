@@ -1,5 +1,6 @@
 class Parent1{
-    int a,b;
+    int a;
+    int b;
     void show(){
         System.out.println(a+" and "+b);
     }

@@ -1,9 +1,8 @@
 class Parent{
     void display(){
-        privatemethod();
         System.out.println("I am in display() of Parent Class");
     }
-    private void privatemethod(){
+    protected void protectedmethod(){
         System.out.println("I am in private method of parent class");
     }
 }
@@ -17,6 +16,7 @@ public class Main {
         Child C = new Child();
         C.show();
         C.display();
+        C.protectedmethod();
     }
     
 }
