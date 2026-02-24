@@ -1,12 +1,11 @@
 package pack1;
 class Example{
-    void display(){
+    public void display(){
         System.out.println("Display in Example");
     }
 }
-public class First {
+public class First extends Example {
     public static void main(String[] args) {
-        Example E = new Example();
-        E.display();
+    
     }
 }
