@@ -8,8 +8,9 @@ public class Main2 {
         try{
             int res = a/b;
             System.out.println("The result is: "+res);
-        }catch(ArithmeticException e){
-            System.out.println("can't divide it by zero");
+        }catch(Throwable e){
+            // System.out.println("can't divide it by zero");
+            System.out.println(e.getMessage());
         }
         finally{
             S.close();
