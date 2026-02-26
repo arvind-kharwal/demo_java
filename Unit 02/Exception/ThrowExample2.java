@@ -16,7 +16,13 @@ public class ThrowExample2 {
         System.out.println("Enter the numbers:");
         int a = S.nextInt();
         int b = S.nextInt();
-        divide(a,b);
+        try{
+            divide(a,b);
+        }
+        catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        
         S.close();
     }
 }
