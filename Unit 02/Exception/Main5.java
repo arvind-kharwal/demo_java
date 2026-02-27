@@ -23,6 +23,7 @@ public class Main5 {
                 display();
         }
         catch(ArithmeticException e){
+            System.out.println("Handled in main");
             System.out.println(e.getMessage());
         }
     }
