@@ -27,6 +27,7 @@ public class RethrowExample {
             divide(a,b);
         }
         catch(ArithmeticException e){
+            System.out.println("Handled in main");
             System.out.println(e.getMessage());
         }
         
