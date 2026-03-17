@@ -14,6 +14,6 @@ public class Main {
         System.out.println(Example.a);
         System.out.println(Example.name);
         Example E1 = new Example(20);
-        E1.display();
+        // E1.display();
     }
 }
