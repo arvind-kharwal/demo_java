@@ -15,7 +15,10 @@ public class Main3 {
     T1.start();
     Example1 E1 = new Example1();
     Thread T2 = new Thread(E1,"Second Thread");
-
+    T1.setPriority(10);
+    T2.setPriority(2);
+    T1.start();
+    T2.start();
     }
     
 }
