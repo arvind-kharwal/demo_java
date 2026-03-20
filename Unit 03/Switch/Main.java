@@ -7,14 +7,14 @@ public class Main {
         String r = S.nextLine();
         switch(r)
         {
-            case "Monday":
-                System.out.println("Monday");
+            case "Monday","Tuesday":
+                System.out.println("Java Class");
                 break;
-            case "Tuesday":
-                System.out.println("Tuesday");
+            case "Wednesday","Thursday":
+                System.out.println("C Class");
                 break;
             default: 
-            System.out.println("Default");
+            System.out.println("No class");
         }
         S.close();
     }
