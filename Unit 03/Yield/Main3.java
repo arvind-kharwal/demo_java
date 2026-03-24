@@ -1,24 +1,24 @@
-class Thread2 extends Thread{
+class Class1 extends Thread{
     public void run(){
-        System.out.println("Thread started");
+        for(int i=1;i<=5;i++)
+            System.out.print(i);
     }
 }
-class Example1 implements Runnable{
+class Class2 implements Runnable{
     public void run()
     {
-        System.out.println("Using Runnable Interafce");
+        for(char i='A';i<='E';i++)
+            System.out.print(i);
     }
 }
 public class Main3 {
     public static void main(String[] args) {
-        Thread2 T1 = new Thread2();
-    T1.start();
-    Example1 E1 = new Example1();
-    Thread T2 = new Thread(E1,"Second Thread");
-    T1.setPriority(10);
-    T2.setPriority(2);
-    T1.start();
-    T2.start();
+        Class1 T1 = new Class1();
+        Class2 C1 = new Class2();
+        Thread T2 = new Thread(C1);
+        // Priorities 
+        T1.start();
+        T2.start();
     }
     
 }
