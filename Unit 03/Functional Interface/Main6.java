@@ -7,7 +7,6 @@ interface Example1{
 public class Main6 {
     public static void main(String[] args) {
         Example1 E1 = (int r)-> PI*r*r;
-        System.out.println("Enter the radius: ");
         Scanner S= new Scanner(System.in);
         System.out.println("Enter the radius:");
         int x = S.nextInt();
