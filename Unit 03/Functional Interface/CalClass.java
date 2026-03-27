@@ -22,6 +22,10 @@ public class CalClass {
         System.out.println(r2);
         double r3 = C1.sum(10,20);
         System.out.println(r3);
+        double r4 = C1.sub(10,20);
+        System.out.println(r4);
+        double r5 = Calc.div(100,2);
+        System.out.println(r5);
 
     }
 }
