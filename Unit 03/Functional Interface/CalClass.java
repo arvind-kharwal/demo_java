@@ -1,0 +1,27 @@
+interface Calc{
+    double square(double n);
+    default double sum(int a,int b){
+        return a+b;
+    }
+    default double sub(int a,int b){
+        return a-b;
+    }
+    static double mul(int a,int b){
+        return a*b;
+    }
+    static double div(int a,int b){
+        return a/b;
+    }
+}
+public class CalClass {
+    public static void main(String[] args) {
+        Calc C1 = (double n)->n*n;
+        double r1 = C1.square(2.5);
+        System.out.println(r1);
+        double r2 = Calc.mul(10,2);
+        System.out.println(r2);
+        double r3 = C1.sum(10,20);
+        System.out.println(r3);
+
+    }
+}
