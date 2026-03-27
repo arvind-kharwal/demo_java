@@ -15,14 +15,14 @@ import java.lang.annotation.RetentionPolicy;
 }
 @Student1(roll=1,name="Arvind")
 @Student1(roll=2,name="Amit")
+@Student1(roll=3,name="Anubhav")
 
 public class Main2 {
     public static void main(String[] args) {
         Student1 [] S1 = Main2.class.getAnnotationsByType(Student1.class);
         for(Student1 s:S1)
         {
-            System.out.println(s.roll());
-            System.out.println(s.name());
+            System.out.println(s.roll()+" "+s.name());
         }
     }
 }
