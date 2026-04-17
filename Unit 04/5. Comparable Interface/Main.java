@@ -10,9 +10,9 @@ class Student implements Comparable<Student> {
     }
 
     public int compareTo(Student S1) {
-        if (r == S1.r)
+        if (this.r == S1.r)
             return 0;
-        else if (r > S1.r)
+        else if (this.r > S1.r)
             return 1;
         else
             return -1;
