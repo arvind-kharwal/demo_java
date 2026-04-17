@@ -9,10 +9,10 @@ class Student {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return r + " " + name;
-    }
+    // @Override
+    // public String toString() {
+    // return r + " " + name;
+    // }
 }
 
 public class Main {
@@ -21,6 +21,8 @@ public class Main {
         list.add(new Student(3, "Arvind"));
         list.add(new Student(1, "Abhi"));
         list.add(new Student(13, "Bhavya"));
-        System.out.println(list);
+        for (Student i : list) {
+            System.out.println(i.r + " " + i.name);
+        }
     }
 }
