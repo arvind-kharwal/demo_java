@@ -7,5 +7,9 @@ public class Main7 {
         list.add(40);
         list.add(10);
         System.out.println("Original list: " + list);
+        // list.add(1, 45);
+        list.set(2, 1000);
+        System.out.println("Original list: " + list);
+
     }
 }
