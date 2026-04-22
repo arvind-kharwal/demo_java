@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Student1 {
+    int roll;
+    String name;
+    double marks;
+
+    Student1(int roll, String name, double marks) {
+        this.roll = roll;
+        this.name = name;
+        this.marks = marks;
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        List<Student1> list = new ArrayList<>();
+        list.add(new Student1(1, "Arvind", 78.56));
+        list.add(new Student1(11, "Chhhaya", 80.56));
+        list.add(new Student1(7, "Bhanu", 91.56));
+        // list.sort(Comparator.comparingInt(S -> S.roll));
+        // list.sort(Comparator.comparingDouble(S -> S.marks));
+        // list.sort(Comparator.comparing(S -> S.name));
+        list.sort(Comparator.comparing()
+                .thenComparing(S -> S.name));
+        for (Student1 s : list) {
+            System.out.println(s.roll + " " + s.name + " " + s.marks);
+        }
+    }
+}
+
