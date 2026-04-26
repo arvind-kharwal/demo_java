@@ -7,5 +7,11 @@ public class Main2 {
         p.setProperty("name", "Arvind");
         p.setProperty("email", "thekarvind@gmail.com");
         p.store(new FileWriter("info.properties"), "Properties Example");
+
+        FileReader reader = new FileReader("db.properties");
+        p.load(reader);
+        // access properties data
+        System.out.println(p.getProperty("name"));
+        System.out.println(p.getProperty("email"));
     }
 }
