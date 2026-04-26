@@ -34,10 +34,13 @@ public class Main1 {
         // list.sort(Comparator.comparingInt(S -> S.roll));
         // list.sort(Comparator.comparingDouble(S -> S.marks));
         // list.sort(Comparator.comparing(S -> S.name));
-        list.sort(Comparator.comparing(Student1::getName)
-                .thenComparingInt(Student1::getRoll));
-        // list.sort(Comparator.comparing((S) -> S.name)
-        // .thenComparingInt((S) -> S.age));
+        // list.sort(Comparator.comparing(Student1::getName)
+        // .thenComparingInt(Student1::getRoll));
+        list.sort(
+                Comparator.comparing(S -> s.name)
+                        .thenComparing(S -> S.roll));
+        // .thenComparingInt(Student1::getRoll));
+
         for (Student1 s : list) {
             System.out.println(s.roll + " " + s.name + " " + s.marks);
         }
